@@ -1,0 +1,8 @@
+print classification_report(all_labels, all_y_pred)
+             precision    recall  f1-score   support
+
+          0       0.98      0.98      0.98      3997
+          1       0.79      0.83      0.81       363
+
+avg / total       0.97      0.97      0.97      4360
+

