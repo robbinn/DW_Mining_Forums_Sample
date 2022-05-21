@@ -2,7 +2,7 @@ __author__ = '91Shadows'
 
 from Forums.BestCardingWorld.parser import bestcardingworld_description_parser, bestcardingworld_links_parser
 
-'''
+'''git push -u origin main
 The Majestic Garden Crawler (Mechanize)
 '''
 
